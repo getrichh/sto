@@ -35,7 +35,7 @@ export default function Contacts() {
                         width="100%"
                         height="400"
                         className="border-0 rounded-lg shadow-xl hover:scale-105 transition-transform duration-500 ease-in-out"
-                        allowFullScreen=""
+                        allowFullScreen={true} // Булевое значение
                         loading="lazy"
                     ></iframe>
                 </div>
