@@ -29,24 +29,25 @@ function Header() {
                 </h1>
                 <ul className="flex space-x-8">
                     <li>
-                        {/* Используем Link вместо <a> */}
-                        <Link href="/" passHref>
-                            <a className="text-white hover:text-orange-500 transition-colors duration-300">Главная</a>
+                        <Link href="/" className="text-white hover:text-orange-500 transition-colors duration-300">
+                            Главная
                         </Link>
                     </li>
                     <li>
-                        <Link href="/about" passHref>
-                            <a className="text-white hover:text-orange-500 transition-colors duration-300">О нас</a>
+                        <Link href="/about" className="text-white hover:text-orange-500 transition-colors duration-300">
+                            О нас
                         </Link>
                     </li>
                     <li>
-                        <Link href="/services" passHref>
-                            <a className="text-white hover:text-orange-500 transition-colors duration-300">Услуги</a>
+                        <Link href="/services"
+                              className="text-white hover:text-orange-500 transition-colors duration-300">
+                            Услуги
                         </Link>
                     </li>
                     <li>
-                        <Link href="/contacts" passHref>
-                            <a className="text-white hover:text-orange-500 transition-colors duration-300">Контакты</a>
+                        <Link href="/contacts"
+                              className="text-white hover:text-orange-500 transition-colors duration-300">
+                            Контакты
                         </Link>
                     </li>
                 </ul>
