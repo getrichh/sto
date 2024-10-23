@@ -1,7 +1,6 @@
-
-
 import './globals.css'; // Импорт глобальных стилей
 import CallButton from '@/components/CallButton';
+import Link from 'next/link'; // Импорт компонента Link для навигации
 
 export const metadata = {
     title: 'СТО',
@@ -30,21 +29,25 @@ function Header() {
                 </h1>
                 <ul className="flex space-x-8">
                     <li>
-                        <a href="/"
-
-                           className="text-white hover:text-orange-500 transition-colors duration-300">Главная</a>
+                        {/* Используем Link вместо <a> */}
+                        <Link href="/" passHref>
+                            <a className="text-white hover:text-orange-500 transition-colors duration-300">Главная</a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/about" className="text-white hover:text-orange-500 transition-colors duration-300">О
-                            нас</a>
+                        <Link href="/about" passHref>
+                            <a className="text-white hover:text-orange-500 transition-colors duration-300">О нас</a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/services"
-                           className="text-white hover:text-orange-500 transition-colors duration-300">Услуги</a>
+                        <Link href="/services" passHref>
+                            <a className="text-white hover:text-orange-500 transition-colors duration-300">Услуги</a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/contacts"
-                           className="text-white hover:text-orange-500 transition-colors duration-300">Контакты</a>
+                        <Link href="/contacts" passHref>
+                            <a className="text-white hover:text-orange-500 transition-colors duration-300">Контакты</a>
+                        </Link>
                     </li>
                 </ul>
             </nav>
