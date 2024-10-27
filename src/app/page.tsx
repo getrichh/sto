@@ -15,7 +15,7 @@ export default function Home() {
                         src="/images/img.png" // Убедись, что изображение находится в папке public/images
                         alt="СТО"
                         fill // Новый способ использовать layout="fill"
-                        style={{ objectFit: "cover" }} // Заменяет objectFit="cover"
+                        style={{objectFit: "cover"}} // Заменяет objectFit="cover"
                         quality={100} // Увеличиваем качество изображения
                         priority={true} // Указываем Next.js загружать изображение с приоритетом
                         className="opacity-50" // Затемнение изображения для улучшения контраста текста
@@ -23,17 +23,17 @@ export default function Home() {
                 </div>
 
                 {/* Текст поверх изображения */}
-                <div className="relative z-10 text-center p-6 space-y-6">
-                    <h1 className="text-6xl font-extrabold mb-6 text-center  text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500">
+                <div className="relative z-10 text-center p-4 sm:p-6 space-y-4 sm:space-y-6">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 sm:mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500">
                         Профессиональный сервис для вашего автомобиля
                     </h1>
-                    <p className="text-xl max-w-3xl mx-auto text-gray-200 leading-relaxed tracking-wide">
+                    <p className="text-base sm:text-lg md:text-xl max-w-xs sm:max-w-xl md:max-w-3xl mx-auto text-gray-200 leading-relaxed tracking-wide">
                         Мы предлагаем высококачественное обслуживание и ремонт автомобилей всех марок, используя самые
                         передовые технологии.
                     </p>
                     <a href="tel:+79277102171" className="inline-block">
                         <Button
-                            className="bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 transition-transform duration-300 transform hover:scale-110 shadow-lg px-8 py-3 text-lg font-bold rounded-full">
+                            className="bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 transition-transform duration-300 transform hover:scale-110 shadow-lg px-6 sm:px-8 py-2 sm:py-3 text-base sm:text-lg font-bold rounded-full">
                             Позвонить
                         </Button>
                     </a>
